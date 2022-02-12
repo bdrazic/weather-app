@@ -1,13 +1,115 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Outfit:wght@200;300;400;500&family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Outfit" "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p{
+  font-size: 1.6rem;
+}
+
+h1{
+  font-size: 5rem;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+.app{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: #fff;
+  background-image: url('./assets/sunny.jpg');
+  background-size:cover;
+  background-position: bottom;
+}
+
+main {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
+}
+
+.app.cloudy{
+  background-image: url('./assets/cloudy.jpg');
+}
+
+.app .search {
+  text-align: center;
+  padding: 1rem;
+}
+
+.app input {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.1);
+  color: #f8f8f8;
+  box-shadow: 0px 5px rgba(0,0,0,0.2);
+}
+
+::placeholder{
+  color: #f8f8f8;
+}
+
+.container{
+  max-width: 700px;
+  height: 640px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.app .description{
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(269deg);
+}
+
+.app .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.weather-icon{
+  text-align: center;
+}
+
+.date {
+  text-align: center;
+  padding-bottom: 10px;
+  text-shadow: 0px 3px rgba(0,0,0,0.2);
 }

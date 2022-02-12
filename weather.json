@@ -1,0 +1,35 @@
+{
+  "coord": { "lon": 13.8481, "lat": 44.8683 },
+  "weather": [
+    {
+      "id": 804,
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 283.46,
+    "feels_like": 282.66,
+    "temp_min": 282.09,
+    "temp_max": 283.63,
+    "pressure": 1024,
+    "humidity": 81
+  },
+  "visibility": 10000,
+  "wind": { "speed": 3.09, "deg": 70 },
+  "clouds": { "all": 100 },
+  "dt": 1644604902,
+  "sys": {
+    "type": 1,
+    "id": 6386,
+    "country": "HR",
+    "sunrise": 1644559899,
+    "sunset": 1644596772
+  },
+  "timezone": 3600,
+  "id": 3192224,
+  "name": "Pula",
+  "cod": 200
+}
